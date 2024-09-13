@@ -1,0 +1,153 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Botón Volver en la esquina superior derecha -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textColor="#ffffff"
+            android:backgroundTint="#FF9800"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_below="@id/back_button">
+
+            <!-- Título de la sección -->
+            <TextView
+                android:id="@+id/recommendation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Su película recomendada es:"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+            <!-- Imagen de la película recomendada -->
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/Pelicula5"
+                android:contentDescription="Imagen de la película recomendada"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Título de la película -->
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neon Horizon"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Género de la película -->
+            <TextView
+                android:id="@+id/movie_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género: Acción"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Valoraciones de la película -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <!-- Valoración de StarMovies (1 a 5 estrellas) -->
+                <TextView
+                    android:id="@+id/starmovies_rating_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valoración StarMovies:"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/starmovies_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★★★★★ (5/5)"
+                    android:textSize="18sp"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+
+                <!-- Valoración de MovieRate (0 a 10) -->
+                <TextView
+                    android:id="@+id/movierate_rating_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valoración MovieRate:"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/movierate_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9/10"
+                    android:textSize="18sp"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Pregunta sobre la nota de la recomendación -->
+            <TextView
+                android:id="@+id/rating_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué nota le da a esta recomendación?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- Calificación con estrellas -->
+            <RatingBar
+                android:id="@+id/recommendation_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:rating="0"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

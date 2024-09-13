@@ -1,0 +1,175 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5D6BE8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Título de la sección -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un Género de Película"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:textColor="#333333" />
+
+        <!-- Imagen justo arriba de los géneros -->
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/movie"
+            android:contentDescription="Imagen representativa de películas" />
+
+        <!-- GridLayout para organizar los botones de los géneros -->
+        <GridLayout
+            android:id="@+id/genre_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Botón para el género Acción -->
+            <Button
+                android:id="@+id/genre_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Acción"
+                android:layout_margin="8dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Comedia -->
+            <Button
+                android:id="@+id/genre_comedy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Comedia"
+                android:layout_margin="8dp"
+                android:backgroundTint="#FFEB3B"
+                android:textColor="#333333"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Drama -->
+            <Button
+                android:id="@+id/genre_drama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Drama"
+                android:layout_margin="8dp"
+                android:backgroundTint="#9C27B0"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Ciencia Ficción -->
+            <Button
+                android:id="@+id/genre_scifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Ciencia Ficción"
+                android:layout_margin="8dp"
+                android:backgroundTint="#00BCD4"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Terror -->
+            <Button
+                android:id="@+id/genre_horror"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Terror"
+                android:layout_margin="8dp"
+                android:backgroundTint="#F44336"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Romance -->
+            <Button
+                android:id="@+id/genre_romance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Romance"
+                android:layout_margin="8dp"
+                android:backgroundTint="#E91E63"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para el género Aventura -->
+            <Button
+                android:id="@+id/genre_adventure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Aventura"
+                android:layout_margin="8dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+            <!-- Botón para género Aleatorio -->
+            <Button
+                android:id="@+id/genre_random"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="Aleatorio"
+                android:layout_margin="8dp"
+                android:backgroundTint="#607D8B"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:textSize="18sp" />
+        </GridLayout>
+
+        <!-- Botón de confirmar selección más largo y alargado -->
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Selección"
+            android:backgroundTint="#FF9800"
+            android:textColor="#ffffff"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
