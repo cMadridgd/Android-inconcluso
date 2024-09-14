@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Completar"
         tools:targetApi="31">
         <activity
+            android:name=".Eleccion"
+            android:exported="false" />
+        <activity
             android:name=".Main3"
             android:exported="false" />
         <activity

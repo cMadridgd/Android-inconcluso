@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="121dp"
         android:layout_marginBottom="27dp"
-        android:text="Only One Day Left App"
+        android:text="EmocionMovies"
         android:textSize="30sp"
         android:textStyle=""
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
@@ -37,8 +37,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="267dp"
+        android:layout_height="327dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="38dp"
@@ -46,15 +46,8 @@
         app:layout_constraintEnd_toEndOf="@+id/app_tittle"
         app:layout_constraintStart_toStartOf="@+id/app_tittle"
         app:layout_constraintTop_toBottomOf="@+id/app_tittle"
-        app:srcCompat="@drawable/onedayleft" />
+        app:srcCompat="@drawable/film" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="323dp"
-        android:layout_height="516dp"
-        app:srcCompat="@drawable/cine"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="107dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
